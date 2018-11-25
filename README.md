@@ -1,4 +1,4 @@
-# vue-webpack-boilerplate
+# Leo's vue-webpack-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
@@ -28,8 +28,8 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 $ npm install -g vue-cli
 $ vue init webpack my-project
 $ cd my-project
-$ npm install
-$ npm run dev
+$ yarn
+$ yarn run dev
 ```
 
 This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
