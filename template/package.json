@@ -43,6 +43,7 @@
     {{/elementui}}
     {{#vux}}
     "vux": "^2.9.2",
+    "vux-loader": "^1.2.9",
     {{/vux}}
     "vue": "^2.5.2"
   },
