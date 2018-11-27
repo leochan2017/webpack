@@ -69,6 +69,10 @@ module.exports = {
       type: 'confirm',
       message: 'Install vuex?'
     },
+    elementUi:{
+      type: 'confirm',
+      message: 'Install element-ui ?'
+    },
     lint: {
       when: 'isNotTest',
       type: 'confirm',

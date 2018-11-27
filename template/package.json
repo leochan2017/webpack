@@ -25,11 +25,16 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}},
+    "vue": "^2.5.2",
+    {{#router}}
+    "vue-router": "^3.0.1",
+    {{/router}}
     "vuex": "^3.0.1",
     "less": "^3.8.1",
-    "less-loader": "^4.1.0"
+    "less-loader": "^4.1.0",
+    {{#elementUi}}
+    "element-ui": "^2.4.5"
+    {{/elementUi}}
   },
   "devDependencies": {
     {{#lint}}
