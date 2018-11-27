@@ -6,13 +6,12 @@ Vue.use(Vuex)
 // const vuexLocal = new VuexPersistence({
 //   storage: window.localStorage
 // })
+
 export default new Vuex.Store({
   state: {},
   mutations: {
     setParam(state, payload) {
-      for (let i in payload) {
-        state[i] = payload[i]
-      }
+      for (let i in payload) state[i] = payload[i]
     }
   },
   getters: {},

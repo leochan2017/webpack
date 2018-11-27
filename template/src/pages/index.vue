@@ -1,6 +1,6 @@
 <template>
   <div>
-    hello leo
+    Hello Leo !
   </div>
 </template>
 <script>
