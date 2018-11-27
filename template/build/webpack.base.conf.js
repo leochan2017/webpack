@@ -9,8 +9,8 @@ const vuxLoader = require('vux-loader')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-
-{{#lint}}const createLintingRule = () => ({
+{{#lint}}
+const createLintingRule = () => ({
   test: /\.(js|vue)$/,
   loader: 'eslint-loader',
   enforce: 'pre',
@@ -19,8 +19,8 @@ function resolve (dir) {
     formatter: require('eslint-friendly-formatter'),
     emitWarning: !config.dev.showEslintErrorsInOverlay
   }
-}){{/lint}}
-
+})
+{{/lint}}
 const webpackConfig = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -96,7 +96,6 @@ const webpackConfig = {
     child_process: 'empty'
   }
 }
-
 {{#if vux}}
 module.exports = vuxLoader.merge(webpackConfig, {
   plugins: ['vux-ui']
