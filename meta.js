@@ -63,7 +63,15 @@ module.exports = {
     router: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Install vue-router?',
+      message: 'Install vue-router ?',
+    },
+    less: {
+      type: 'confirm',
+      message: 'Use less in your project ?'
+    },
+    vueresource: {
+      type: 'confirm',
+      message: 'Install vue-resource ?'
     },
     vuex:{
       type: 'confirm',
@@ -76,7 +84,7 @@ module.exports = {
     lint: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Use ESLint to lint your code?',
+      message: 'Use ESLint to lint your code ?',
     },
     lintConfig: {
       when: 'isNotTest && lint',
