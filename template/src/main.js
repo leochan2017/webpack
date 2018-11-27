@@ -5,9 +5,9 @@ import App from './App'
 {{#router}}
 import router from './router'
 {{/router}}
-
 {{#vueresource}}
 import VueResource from 'vue-resource'
+
 Vue.use(VueResource)
 Vue.http.options.root = '/'
 Vue.http.interceptors.push((request, next) => {
@@ -26,21 +26,21 @@ Vue.http.interceptors.push((request, next) => {
   })
 })
 {{/vueresource}}
-
 {{#elementui}}
 import ElementUI from 'element-ui'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import 'element-ui/lib/theme-chalk/index.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
 Vue.use(ElementUI){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/elementui}}
-
-{{#vuex}}  // vuex为true的时候就会写入这些
+{{#vuex}}
 import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import store from  './store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
 Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
 
 Vue.config.productionTip = false
-
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
   {{#router}}
