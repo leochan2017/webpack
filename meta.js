@@ -69,7 +69,7 @@ module.exports = {
       type: 'confirm',
       message: 'Install vuex?'
     },
-    elementUi:{
+    elementui:{
       type: 'confirm',
       message: 'Install element-ui ?'
     },

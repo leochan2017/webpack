@@ -6,11 +6,11 @@ import App from './App'
 import router from './router'
 {{/router}}
 
-{{#elementUi}}
+{{#elementui}}
 import ElementUI from 'element-ui'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import 'element-ui/lib/theme-chalk/index.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(ElementUI){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/elementUI}}
+{{/elementui}}
 
 {{#vuex}}  // vuex为true的时候就会写入这些
 import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}

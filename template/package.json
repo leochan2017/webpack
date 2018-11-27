@@ -32,9 +32,9 @@
     "vuex": "^3.0.1",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
-    {{#elementUi}}
+    {{#elementui}}
     "element-ui": "^2.4.5"
-    {{/elementUi}}
+    {{/elementui}}
   },
   "devDependencies": {
     {{#lint}}
