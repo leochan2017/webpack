@@ -101,5 +101,5 @@ module.exports = vuxLoader.merge(webpackConfig, {
   plugins: ['vux-ui']
 })
 {{else}}
-module.exports webpackConfig
+module.exports = webpackConfig
 {{/if}}
