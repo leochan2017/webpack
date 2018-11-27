@@ -92,34 +92,34 @@ module.exports = {
         short: 'none',
       }, ],
     },
-    unit: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Set up unit tests',
-    },
-    runner: {
-      when: 'isNotTest && unit',
-      type: 'list',
-      message: 'Pick a test runner',
-      choices: [{
-        name: 'Jest',
-        value: 'jest',
-        short: 'jest',
-      }, {
-        name: 'Karma and Mocha',
-        value: 'karma',
-        short: 'karma',
-      }, {
-        name: 'none (configure it yourself)',
-        value: 'noTest',
-        short: 'noTest',
-      }, ],
-    },
-    e2e: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Setup e2e tests with Nightwatch?',
-    },
+    // unit: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Set up unit tests',
+    // },
+    // runner: {
+    //   when: 'isNotTest && unit',
+    //   type: 'list',
+    //   message: 'Pick a test runner',
+    //   choices: [{
+    //     name: 'Jest',
+    //     value: 'jest',
+    //     short: 'jest',
+    //   }, {
+    //     name: 'Karma and Mocha',
+    //     value: 'karma',
+    //     short: 'karma',
+    //   }, {
+    //     name: 'none (configure it yourself)',
+    //     value: 'noTest',
+    //     short: 'noTest',
+    //   }, ],
+    // },
+    // e2e: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Setup e2e tests with Nightwatch?',
+    // },
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
