@@ -41,6 +41,9 @@
     {{#elementui}}
     "element-ui": "^2.4.5",
     {{/elementui}}
+    {{#vux}}
+    "vux": "^2.9.2",
+    {{/vux}}
     "vue": "^2.5.2"
   },
   "devDependencies": {
