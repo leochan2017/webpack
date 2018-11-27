@@ -78,7 +78,7 @@ To get started:
     )}${lintMsg(data)}yarn run dev`
   )}
   
-Thank you for using Leo's template ! Enjoy It :) !
+Thank you for using Leo's template ! Enjoy It :)
 `
   console.log(message)
 }
