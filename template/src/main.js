@@ -2,6 +2,9 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App'
+{{#less}}
+import './less/comm.less'
+{{/less}}
 {{#router}}
 import router from './router'
 {{/router}}
