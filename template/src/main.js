@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 {{#less}}
+import 'normalize.css'
 import './less/comm.less'
 {{/less}}
 {{#router}}

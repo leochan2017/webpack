@@ -38,6 +38,7 @@
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     {{/less}}
+    "normalize.css": "^8.0.1",
     {{#elementui}}
     "element-ui": "^2.4.5",
     {{/elementui}}
